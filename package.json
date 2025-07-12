@@ -1,0 +1,15 @@
+{
+  "name": "xbox-activity-portal",
+  "version": "1.0.0",
+  "description": "Xbox 360 Discord Rich Presence with auto-connect",
+  "main": "backend/src/index.js",
+  "scripts": {
+    "start": "cd backend && node src/index.js",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["xbox", "discord", "rich-presence", "tailscale"],
+  "author": "",
+  "license": "ISC"
+}

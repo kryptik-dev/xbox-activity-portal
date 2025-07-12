@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: xbox-activity-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node src/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: clientId
+        sync: false
+      - key: IP
+        value: 100.71.125.83
+      - key: showGamertag
+        value: true 

@@ -1,7 +1,7 @@
 import './App.css'
 import { useEffect, useState } from 'react'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL || 'https://your-render-app-name.onrender.com';
 
 function XboxIcon({ className = '' }) {
   return (
@@ -44,12 +44,10 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [connecting, setConnecting] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [env, setEnv] = useState<any>(null);
   const [envLoading, setEnvLoading] = useState(false);
   const [envError, setEnvError] = useState<string | null>(null);
   const [envSaving, setEnvSaving] = useState(false);
   const [envForm, setEnvForm] = useState({ clientId: '', IP: '', showGamertag: 'true' });
-  const [restarting, setRestarting] = useState(false);
   const [showRestartNotice, setShowRestartNotice] = useState(false);
   const [autoConnectEnabled, setAutoConnectEnabled] = useState(true);
 
@@ -131,7 +129,6 @@ function App() {
       const res = await fetch(`${API_URL}/env`);
       if (!res.ok) throw new Error('Failed to fetch environment');
       const data = await res.json();
-      setEnv(data);
       setEnvForm({
         clientId: data.clientId || '',
         IP: data.IP || '',
@@ -189,11 +186,6 @@ function App() {
           <h2>Status</h2>
           {loading ? (
             <div className="loading-spinner" />
-          ) : restarting ? (
-            <div>
-              <div className="loading-spinner" />
-              <p style={{ color: '#7df900', fontWeight: 'bold', marginTop: '1rem' }}>Restarting backend...</p>
-            </div>
           ) : error ? (
             <p style={{ color: '#ff6b6b' }}>Error: {error}</p>
           ) : status && !status.xboxConnected ? (

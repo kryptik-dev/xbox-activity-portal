@@ -28,8 +28,8 @@ A modern desktop app to view and share your Xbox 360 activity, with Discord Rich
 ## Development
 
 ### Prerequisites
-- Node.js (v16+ recommended)
-- npm or yarn
+**No nodejs or npm needed**
+Download the .exe file from: [Releases Page](https://github.com/kryptik-dev/xbox-activity-portal/releases/tag/v1.2.1)
 
 ### Setup
 ```bash

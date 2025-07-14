@@ -4,7 +4,7 @@ A modern desktop app to view and share your Xbox 360 activity, with Discord Rich
 
 ---
 
-## ðŸŽ® Features
+## Features
 
 - **Xbox 360 Connection:** View real-time game, title ID, and gamertag from your Xbox 360.
 - **Discord Rich Presence:** Automatically updates your Discord status with your current Xbox activity.
@@ -16,7 +16,7 @@ A modern desktop app to view and share your Xbox 360 activity, with Discord Rich
 
 ---
 
-## ðŸ› ï¸ Installation
+## Installation
 
 1. **Download the latest release** from the [Releases page](https://github.com/lilpizzaro/xbox-activity-portal/releases/).
 2. **Run** `Xbox Activity Portal.exe`.
@@ -25,7 +25,7 @@ A modern desktop app to view and share your Xbox 360 activity, with Discord Rich
 
 ---
 
-## ðŸš€ Development
+## Development
 
 ### Prerequisites
 - Node.js (v16+ recommended)
@@ -49,7 +49,7 @@ Xbox.Activity.Portal.Setup.1.0.0.exe
 
 ---
 
-## ðŸ“¦ Repository Management
+## Repository Management
 
 ### Large File Storage (Git LFS)
 This repository uses [Git Large File Storage (LFS)](https://git-lfs.github.com/) to efficiently manage large files and binaries. All files, including `.exe` files and hidden files, are tracked with Git LFS. This helps keep the repository size manageable and ensures smooth collaboration.
@@ -76,17 +76,17 @@ These rules are enforced in the `.gitignore` file.
 
 ---
 
-## ðŸ“ Usage
-- Make sure your Xbox 360 has debugging enabled.
+## Usage
+- Make sure your Xbox 360 has the XBDM plugin.
 - Start the app, enter your Xbox IP and Discord Client ID in settings.
 - Click **Connect** to link your Xbox and Discord.
 - Your Discord status will update automatically with your Xbox activity.
 
 ---
 
-## ðŸ™ Credits
+## Credits
 - Inspired by the Xbox 360 Metro Dashboard
 - Uses [discord-rpc](https://www.npmjs.com/package/discord-rpc) and [React](https://react.dev/)
-- Created by [ÐºÑÑƒÏÑ‚Î¹Ðº & Safauri]
+- Created by [кяуρтιк &][Safauri](https://github.com/Safauri/)
 
 ---

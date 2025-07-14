@@ -87,6 +87,6 @@ These rules are enforced in the `.gitignore` file.
 ## Credits
 - Inspired by the Xbox 360 Metro Dashboard
 - Uses [discord-rpc](https://www.npmjs.com/package/discord-rpc) and [React](https://react.dev/)
-- Created by [кяуρтιк &][Safauri](https://github.com/Safauri/)
+- Created by [кяуρтιк](https://github.com/kryptik-dev/) & [Safauri](https://github.com/Safauri/)
 
 ---
